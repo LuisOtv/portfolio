@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  background-color: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  background: linear-gradient(45deg, #0f172a, #1e293b, #334155);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  animation: aurora 10s infinite alternate ease-in-out;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.me {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 80px;
+  height: auto;
+  box-shadow: 5px 5px 12px;
+}
+
+.hero {
+  padding-bottom: 50px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  border-radius: 25px 25px 0 0;
+  font-size: 20px;
+  min-width: 160px;
+  color: wheat;
+  background-color: #101010;
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  transition: min-width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.tab:hover {
+  background-color: #121212;
+}
+
+.tab.selected {
+  min-width: 220px;
+  background-color: #151515;
+}
+
+.board {
+  padding: 25px 0;
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px 5px 12px rgb(0, 0, 20);
+}
+
+.stack,
+.projects,
+.tecnologies,
+.more {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stack {
+  width: 90%;
+}
+.stackbut {
+  background: transparent;
+  border: 1px solid wheat;
+  margin: 10px 0;
+  width: 90%;
+  height: 180px;
+  color: wheat;
+  text-align: left;
+  cursor: pointer;
+}
+.kitty {
+  width: 50px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projcard {
+  padding-top: 15px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px solid wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projcardimg {
+  border-radius: 25px;
+  width: 90%;
+  height: auto;
+}
+
+.projcardbut {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.projcardbuticon {
+  padding-bottom: 15px;
+  width: 40px;
+}
+
+.tecbut {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid wheat;
+  border-radius: 10px;
+}
+
+.tecicon {
+  filter: invert();
+  width: 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: wheat;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 100;
+}
+
+button {
+  font-family: Montserrat;
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
