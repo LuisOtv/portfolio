@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab");
 
   const board = [
-    document.querySelector(".stack"),
+    document.querySelector(".about"),
     document.querySelector(".projects"),
     document.querySelector(".tecnologies"),
+    document.querySelector(".certificates"),
     document.querySelector(".more"),
   ];
 
